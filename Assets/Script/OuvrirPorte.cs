@@ -23,8 +23,9 @@ public class OuvrirPorte : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
 {
-if(other.tag =="player"){
+if(other.tag =="Player"){
     _PorteGauche.GetComponent<Animator>().SetBool("Ouvre",true);
+    _PorteDroite.GetComponent<Animator>().SetBool("Ouvre",true);
 }
 
 }
