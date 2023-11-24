@@ -20,7 +20,7 @@ public class NewBehaviourScript : MonoBehaviour
 void OnTriggerEnter(Collider other){
 
         if(other.tag =="Player"){
-    _DoorWoodenRoundLeft.GetComponent<Animator>().SetBool("PorteAvantOuvre",true);
+    _DoorWoodenRoundLeft.GetComponent<Animator>().SetTrigger("New Trigger");
 
     }
 }
